@@ -45,7 +45,7 @@ class API
         }
         $ch = curl_init();
         $ch_options = [
-    CURLOPT_URL => 'https://api.telegram.org/bot'.$this->botToken.'/'.$method,
+    CURLOPT_URL => $this->SnapeBot->settings['endPoint'].'bot'.$this->botToken.'/'.$method,
     CURLOPT_POST => true,
     CURLOPT_POSTFIELDS => http_build_query($args),
     CURLOPT_RETURNTRANSFER => true,
