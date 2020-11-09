@@ -22,7 +22,6 @@ namespace neneone\SnapeBot;
 
 class SnapeBot
 {
-    use \neneone\SnapeBot\DatabaseManager;
     use \neneone\SnapeBot\VariablesMaker;
 
     public static $settingsScheme = [
